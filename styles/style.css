@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather-Light.ttf');
+} 
+
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+/*General setup*/
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: Merriweather, serif;
+}
+
+body {
+  font-family: Raleway, cursive;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+/*Layout*/
+header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li > a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+nav li > a:visited {
+  color: black;
+}
+
+footer {
+  text-align: right;
+}
+
+header, footer {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+/* Tablets */
+@media screen and (min-width: 30em) and (max-width: 64em) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav li {
+    flex: 1;
+   }
+}
+
+/* Desktop */
+@media screen and (min-width: 64em) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav li {
+    flex: 1;
+   }
+
+  body {
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,95 @@
+/*styling for the index*/
+
+.main {
+  margin: 5px;
+  padding: 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .avatar {
+  flex: 1 80%;
+  width: 14rem;
+  height: 14rem;
+
+  background-image: url(../images/Roman-Bando-normal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation: glitch 3.75s infinite steps(1);
+}
+
+.main section {
+  flex: 1;
+}
+
+.main section p > a {
+  text-decoration: underline;
+  color: rebeccapurple;
+}
+
+.main section p > a::after {
+    content: "➥";
+    color: black;
+}
+
+.main section p > a:visited {
+  color: rebeccapurple;
+}
+
+/*This one is used in other parts of the webpage*/
+
+.main .bold {
+    font-weight: bold;
+}
+
+/*styling the avatar*/
+/*animation done using a guide on Instagram @frontendjoe*/
+
+@keyframes glitch {
+  0%, 55.1%, 100% {
+    background-image: url(../images/Roman-Bando-normal.png);
+    background-size: contain;
+  }
+  50% {
+    background-image: url(../images/Roman-Bando-glitch-1.png);
+    background-size: contain;
+  }
+  52.5% {
+    background-image: url(../images/Roman-Bando-glitch-2.png);
+    background-size: contain;
+  }
+  55% {
+    background-image: url(../images/Roman-Bando-glitch-3.png);
+    background-size: contain;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 30em) and (max-width: 64em) {
+  .main .avatar {
+    flex: 1;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .main section {
+    flex: 3;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 64em) {
+  .main .avatar {
+    flex: 1;
+    width: 14rem;
+    height: 10rem;
+  }
+  .main section {
+    flex: 6;
+  }
+}

@@ -1,0 +1,36 @@
+/*styling for the photos*/
+
+.photos p {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.photos span {
+  font-weight: bold;
+}
+
+.photos .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.photos img {
+  max-width: 100%;
+}
+
+/* Desktop */
+@media screen and (min-width: 64em) {
+  .photos figure {
+    flex: 1 25%;
+    padding: 15px;
+    margin: 15px;
+  }
+  
+  .photos img:hover {
+    position: fixed;
+    top: 20vh;
+    left: 40vw;
+    width: 20%;
+  }
+}

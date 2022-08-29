@@ -1,0 +1,8 @@
+/*styling for the brightcode*/
+
+/* Desktop */
+@media screen and (min-width: 64em) {
+  .main p {
+    padding-left: 10rem;
+  }
+}

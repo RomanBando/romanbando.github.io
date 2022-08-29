@@ -1,0 +1,31 @@
+/*styling for the map*/
+
+.map p {
+  text-align: center;
+}
+
+.map iframe {
+  max-width: 100%;
+}
+
+/* Tablets */
+@media screen and (min-width: 30em) and (max-width: 64em) {
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 64em) {
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
